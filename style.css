@@ -1,0 +1,185 @@
+/* ==================================================
+   ESTILO GLOBAL
+   ================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* fundo escuro para melhor contraste */
+    font-family: sans-serif;
+    color: #ffffff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ==================================================
+   TÍTULOS E TEXTOS
+   ================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    color: #ffffff;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    color: #f0f0f0;
+}
+
+.container h3 a,
+.container h4 a {
+    color: #89cfff; /* azul claro para bom contraste */
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.container h3 a:hover,
+.container h4 a:hover {
+    color: #ffffff;
+}
+
+
+/* ==================================================
+   MENU HORIZONTAL
+   ================================================== */
+#menu-h {
+    display: flex;
+    list-style-type: none;
+    background: #45161d; /* vinho escuro */
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#menu-h a {
+    background-color: #45161d;
+    color: #ffffff;
+    padding: 20px 25px;
+    display: block; /* torna toda a área do link clicável */
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#menu-h a:hover {
+    background-color: #ffffff;
+    color: #45161d;
+}
+
+
+/* ==================================================
+   SEÇÕES COM CONTEÚDO (BLOCOS TEXTUAIS)
+   ================================================== */
+section.module.content {
+    padding: 40px 0;
+    background: #45161d; /* fundo vinho escuro */
+    color: #ffffff;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================
+   SEÇÕES PARALLAX (IMAGEM DE FUNDO FIXA)
+   ================================================== */
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* imagens de fundo específicas para cada seção parallax */
+section.module.parallax-1 {
+    background-image: url("efeito-parallax.jpeg");
+}
+
+section.module.parallax-2 {
+    background-image: url("canal.gif");
+}
+
+section.module.parallax-3 {
+    background-image: url("galo.gif");
+}
+
+section.module.parallax-4 {
+    background-image: url("gifdexter.gif");
+}
+
+/* camada escura para facilitar leitura do texto */
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+/* título sobre imagem parallax */
+section.module.parallax h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #000; /* sombra para dar destaque ao texto */
+}
+footer {
+    background-color: #45161d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+nav#menu-h a {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.module.parallax h1 {
+    font-size: 2em;
+}
