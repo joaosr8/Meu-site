@@ -1,185 +1,227 @@
 /* ==================================================
-   ESTILO GLOBAL
-   ================================================== */
+    ESTILO GLOBAL
+    ================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    margin: 0; /* Remove margens externas padrão de todos os elementos */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total */
+    font-family: 'Open Sans', sans-serif; /* Define a fonte padrão */
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #000; /* fundo escuro para melhor contraste */
-    font-family: sans-serif;
-    color: #ffffff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    background-color: #000; /* Define o fundo preto para contraste */
+    font-family: sans-serif; /* Define fonte alternativa se a anterior falhar */
+    color: #ffffff; /* Define a cor do texto como branca */
+    word-wrap: break-word; /* Quebra palavras grandes para não sair da tela */
+    overflow-wrap: break-word; /* Quebra palavras também em navegadores modernos */
 }
 
 .wrapper {
-    width: 100%;
-    margin: 0 auto;
+    width: 100%; /* Usa toda a largura disponível */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 main {
     display: block;
-    background: #fff;
+    /* O background do main foi comentado porque as sections já têm fundo */
+    /* background: #fff; */
 }
 
 .container {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 760px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza na horizontal */
+    padding: 0 20px; /* Espaçamento lateral interno */
 }
 
 
 /* ==================================================
-   TÍTULOS E TEXTOS
-   ================================================== */
+    TÍTULOS E TEXTOS
+    ================================================== */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 900;
-    color: #ffffff;
+    font-weight: 900; /* Títulos em negrito */
+    color: #ffffff; /* Cor branca */
 }
 
 section.module h2 {
-    margin-bottom: 40px;
-    font-size: 30px;
-    color: #ffffff;
+    margin-bottom: 40px; /* Espaço abaixo do subtítulo */
+    font-size: 30px; /* Tamanho da fonte do subtítulo */
+    color: #ffffff; /* Cor branca */
 }
 
 section.module p {
-    margin-bottom: 40px;
-    color: #f0f0f0;
+    margin-bottom: 40px; /* Espaço após o parágrafo */
+    color: #f0f0f0; /* Cor cinza claro para leitura */
 }
 
 .container h3 a,
 .container h4 a {
-    color: #89cfff; /* azul claro para bom contraste */
-    text-decoration: underline;
-    transition: 0.3s;
+    color: #89cfff; /* Cor azul clara para links */
+    text-decoration: underline; /* Sublinhado nos links */
+    transition: 0.3s; /* Transição suave ao passar o mouse */
 }
 
 .container h3 a:hover,
 .container h4 a:hover {
-    color: #ffffff;
+    color: #ffffff; /* Cor branca ao passar o mouse no link */
 }
 
 
 /* ==================================================
-   MENU HORIZONTAL
-   ================================================== */
+    MENU HORIZONTAL
+    ================================================== */
 #menu-h {
-    display: flex;
-    list-style-type: none;
-    background: #45161d; /* vinho escuro */
+    display: flex; /* Deixa os itens lado a lado */
+    list-style-type: none; /* Remove os marcadores (caso seja uma lista) */
+    background: #45161d; /* Fundo vinho escuro */
     padding: 0;
     margin: 0;
-    justify-content: center;
+    justify-content: center; /* Centraliza os links */
 }
 
 #menu-h a {
-    background-color: #45161d;
-    color: #ffffff;
-    padding: 20px 25px;
-    display: block; /* torna toda a área do link clicável */
-    font-size: 20px;
-    text-decoration: none;
-    transition: 0.4s;
+    background-color: #45161d; /* Cor de fundo dos botões */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px 25px; /* Espaçamento interno */
+    display: block; /* Torna toda a área do link clicável */
+    font-size: 20px; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    transition: 0.4s; /* Transição suave ao passar o mouse */
 }
 
 #menu-h a:hover {
-    background-color: #ffffff;
-    color: #45161d;
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #45161d; /* Texto vinho ao passar o mouse */
 }
 
 
 /* ==================================================
-   SEÇÕES COM CONTEÚDO (BLOCOS TEXTUAIS)
-   ================================================== */
+    SEÇÕES COM CONTEÚDO (BLOCOS TEXTUAIS)
+    ================================================== */
 section.module.content {
-    padding: 40px 0;
-    background: #45161d; /* fundo vinho escuro */
-    color: #ffffff;
+    padding: 40px 0; /* Espaçamento acima e abaixo */
+    background: #45161d; /* Fundo vinho escuro */
+    color: #ffffff; /* Texto branco */
 }
 
 section.module:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0; /* Remove espaço abaixo da última seção */
 }
 
 
 /* ==================================================
-   SEÇÕES PARALLAX (IMAGEM DE FUNDO FIXA)
-   ================================================== */
+    SEÇÕES PARALLAX (IMAGEM DE FUNDO FIXA)
+    ================================================== */
 section.module.parallax {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh !important;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    display: flex; /* Usa flexbox para centralizar conteúdo */
+    flex-direction: column; /* Coloca conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh !important; /* Ocupa toda a altura da tela */
+    width: 100%; /* Ocupa toda a largura */
+    position: relative; /* Permite posicionar elementos sobrepostos */
+    overflow: hidden; /* Oculta conteúdo que passar da borda */
+    background-position: 50% 50%; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed; /* Faz o efeito parallax fixando a imagem */
+    background-size: cover; /* A imagem cobre todo o espaço */
+    -webkit-background-size: cover; /* Compatibilidade com WebKit */
+    -moz-background-size: cover; /* Compatibilidade com Firefox */
+    -o-background-size: cover; /* Compatibilidade com Opera */
 }
 
 /* imagens de fundo específicas para cada seção parallax */
 section.module.parallax-1 {
-    background-image: url("efeito-parallax.jpeg");
+    background-image: url("efeito-parallax.jpeg"); /* Imagem da seção 1 */
 }
 
 section.module.parallax-2 {
-    background-image: url("canal.gif");
+    background-image: url("canal.gif"); /* Imagem da seção 2 */
 }
 
 section.module.parallax-3 {
-    background-image: url("galo.gif");
+    background-image: url("galo.gif"); /* Imagem da seção 3 */
 }
 
 section.module.parallax-4 {
-    background-image: url("gifdexter.gif");
+    background-image: url("gifdexter.gif"); /* Imagem da seção 4 */
 }
 
 /* camada escura para facilitar leitura do texto */
 section.module.parallax:after {
-    content: "";
+    content: ""; /* Adiciona um conteúdo vazio */
     height: 100%;
     width: 100%;
-    position: absolute;
-    z-index: 8;
+    position: absolute; /* Sobrepõe à imagem */
+    z-index: 8; /* Fica atrás do texto */
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    /* Gradiente escurecendo de baixo pra cima */
 }
 
 /* título sobre imagem parallax */
 section.module.parallax h1 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 78px;
-    z-index: 50;
-    text-transform: uppercase;
-    text-shadow: 3px 3px 6px #000; /* sombra para dar destaque ao texto */
+    color: #ffffff; /* Título branco */
+    text-align: center; /* Centralizado */
+    font-size: 78px; /* Fonte grande */
+    z-index: 50; /* Fica na frente do gradiente */
+    text-transform: uppercase; /* Letras maiúsculas */
+    text-shadow: 3px 3px 6px #000; /* Sombra preta para melhor leitura */
 }
+
+
+/* ==================================================
+    SEÇÃO QR CODE (CORRIGIDA E CONSOLIDADA)
+    ================================================== */
+.qrcode-section {
+    text-align: center; /* Centraliza tudo dentro da div */
+    margin: 0; /* Remove margens superiores/inferiores */
+    background-color: #45161d; /* Fundo vinho escuro */
+    padding: 40px 20px; /* Espaçamento interno */
+    border-radius: 0; /* Sem cantos arredondados */
+    box-shadow: none; /* Sem sombra */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.qrcode-section h2 {
+    color: #ffffff; /* Cor do texto */
+    font-size: 26px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.qrcode-section img {
+    width: 180px; /* Largura da imagem */
+    height: auto; /* Altura proporcional */
+    border: 3px solid #fff; /* Borda branca */
+    border-radius: 8px; /* Cantos arredondados */
+    display: block; /* Faz a imagem se comportar como bloco */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+
+/* ==================================================
+    RODAPÉ
+    ================================================== */
 footer {
-    background-color: #45161d;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    background-color: #45161d; /* Fundo vinho escuro */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaço interno */
+    font-size: 14px; /* Tamanho da fonte */
 }
 
+
+/* ==================================================
+    RESPONSIVIDADE (MEDIA QUERIES)
+    ================================================== */
 @media (max-width: 768px) {
-nav#menu-h a {
-    font-size: 16px;
-    padding: 10px;
-}
+    nav#menu-h a {
+        font-size: 16px; /* Reduz fonte do menu em telas pequenas */
+        padding: 10px; /* Reduz espaçamento */
+    }
 
-.module.parallax h1 {
-    font-size: 2em;
+    .module.parallax h1 {
+        font-size: 2em; /* Diminui o tamanho do título principal */
+    }
 }
