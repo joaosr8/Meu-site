@@ -75,14 +75,14 @@ section.module p {
 #menu-h {
     display: flex; /* Deixa os itens lado a lado */
     list-style-type: none; /* Remove os marcadores (caso seja uma lista) */
-    background: #45161d; /* Fundo vinho escuro */
+    background: #34191d; /* Fundo vinho escuro */
     padding: 0;
     margin: 0;
     justify-content: center; /* Centraliza os links */
 }
 
 #menu-h a {
-    background-color: #45161d; /* Cor de fundo dos botões */
+    background-color: #34191d; /* Cor de fundo dos botões */
     color: #ffffff; /* Cor do texto */
     padding: 20px 25px; /* Espaçamento interno */
     display: block; /* Torna toda a área do link clicável */
@@ -93,7 +93,7 @@ section.module p {
 
 #menu-h a:hover {
     background-color: #ffffff; /* Fundo branco ao passar o mouse */
-    color: #45161d; /* Texto vinho ao passar o mouse */
+    color: #34191d; /* Texto vinho ao passar o mouse */
 }
 
 
@@ -171,7 +171,7 @@ section.module.parallax h1 {
 
 
 /* ==================================================
-    SEÇÃO QR CODE (CORRIGIDA E CONSOLIDADA)
+    SEÇÃO QR CODE
     ================================================== */
 .qrcode-section {
     text-align: center; /* Centraliza tudo dentro da div */
@@ -204,7 +204,7 @@ section.module.parallax h1 {
     RODAPÉ
     ================================================== */
 footer {
-    background-color: #45161d; /* Fundo vinho escuro */
+    background-color: #34191d; /* Fundo vinho escuro */
     color: #fff; /* Texto branco */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaço interno */
