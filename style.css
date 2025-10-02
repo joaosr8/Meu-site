@@ -145,7 +145,7 @@ section.module.parallax-3 {
 }
 
 section.module.parallax-4 {
-    background-image: url("gifdexter.gif"); /* Imagem da seção 4 */
+    background-image: url("got.gif"); /* Imagem da seção 4 */
 }
 
 /* camada escura para facilitar leitura do texto */
@@ -225,3 +225,4 @@ footer {
         font-size: 2em; /* Diminui o tamanho do título principal */
     }
 }
+
