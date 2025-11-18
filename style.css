@@ -133,7 +133,7 @@ section.module.parallax {
 
 /* imagens de fundo específicas para cada seção parallax */
 section.module.parallax-1 {
-    background-image: url("efeito-parallax.jpeg"); /* Imagem da seção 1 */
+    background-image: url("NomeFLOWGORITHM.gif"); /* Imagem da seção 1 */
 }
 
 section.module.parallax-2 {
@@ -225,4 +225,5 @@ footer {
         font-size: 2em; /* Diminui o tamanho do título principal */
     }
 }
+
 
