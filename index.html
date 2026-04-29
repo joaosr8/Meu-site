@@ -1,119 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JOÃO SILVA RIBEIRO</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&display=swap">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Não é necessário carregar o Tailwind CSS se você já tem seu próprio style.css e não o usa extensivamente. -->
+    <title>João Silva Ribeiro | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav id="menu-h">
-        <a href="https://joaosr8.github.io/Meu-site/">Home</a>
-        <a href="https://linktr.ee/joaosr8" target="_blank">Minhas Redes</a>
-        <a href="https://drive.google.com/drive/folders/1topCSROLEHgfbyrb9zN01yvQWFy62RPc?usp=sharing" target="_blank">Meu drive</a>
-        <a href="http://alisonfdn.epizy.com" target="_blank">Site do Alison</a>
-    </nav>
+    <header class="topo">
+        <nav id="menu-h" aria-label="Menu principal">
+            <a href="#atividades">Atividades</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#galo">Atlético-MG</a>
+            <a href="#got">Game of Thrones</a>
+            <a href="#filmes">Filmes</a>
+            <a href="https://github.com/joaosr8" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+    </header>
 
-    <div class="wrapper">
-        <main>
-            <!-- Seção com efeito parallax e título -->
-            <section class="module parallax parallax-1">
+    <main>
+        <section class="hero parallax parallax-1" id="atividades">
+            <div class="hero-content">
+                <span class="tag">Portfólio escolar</span>
                 <h1>Atividades em Lab</h1>
-            </section>
-
-            <!-- Conteúdo das atividades -->
-            <section class="module content">
-                <div class="container">
-                    <h2>Atividades em Lab</h2>
-
-                    <h3><a href="https://joaosr8.github.io/menuh/" target="_blank">Menu Horizontal</a></h3>
-                    <p>O menu horizontal organiza links lado a lado no topo da página. É feito com HTML e estilizado com CSS. Facilita a navegação entre as seções do site.</p>
-
-                    <h3><a href="https://joaosr8.github.io/parallax/" target="_blank">Efeito Parallax</a></h3>
-                    <p>O Parallax cria uma ilusão de profundidade ao rolar a página. Utiliza HTML, CSS e às vezes JavaScript. Torna o site mais dinâmico e atrativo.</p>
-
-                    <h3>Programação em JavaScript</h3>
-                    <br>
-
-                    <h4><a href="https://joaosr8.github.io/tcf/" target="_blank">Troque a cor de fundo</a></h4>
-                    <p>Um programa em Java que altera a cor de fundo da tela. Útil para entender interações básicas com o usuário. Trabalha com eventos simples.</p>
-
-                    <h4><a href="https://joaosr8.github.io/t5cf/" target="_blank">Troque 5 cores de fundo</a></h4>
-                    <p>Expande a lógica anterior permitindo alternar entre cinco cores. Ensina uso de arrays e lógica condicional. É uma introdução à repetição e variáveis.</p>
-
-                    <h4><a href="https://joaosr8.github.io/t5img/" target="_blank">Troque 5 imagens</a></h4>
-                    <p>Permite ao usuário trocar entre cinco imagens diferentes. Trabalha com manipulação de interface gráfica. Incentiva criatividade e prática com loops.</p>
-
-                    <h4><a href="https://joaosr8.github.io/calcJS/" target="_blank">Calculadora</a></h4>
-                    <p>Oferece uma calculadora ao usuário, que pode fazer contas de adição, subtração, multiplicação e divisão.</p>
-
-                    <h4><a href="https://joaosr8.github.io/jogodavelha/" target="_blank">Jogo da velha</a></h4>
-                    <p>Oferece um jogo da velha ao usuário, onde ele pode jogar contra outra pessoa ou contra o computador, escolhendo as jogadas em um tabuleiro de 3x3.</p>
-
-                    <h4><a href="https://joaosr8.github.io/jogodomario/" target="_blank">Jogo do Mario</a></h4>
-                    <p>Apresenta um jogo do Mario, onde o personagem deve pular obstáculos para não colidir e continuar avançando. O jogo foi desenvolvido com HTML, CSS e JavaScript, trazendo uma mecânica simples e divertida inspirada nos clássicos da série.</p>
-
-                    <h3>Site sobre Basquete - Trabalho em grupo</h3>
-                    <br>
-                    
-                    <h4><a href="https://basquete.wuaze.com/?i=2" target="_blank">Site</a></h4>
-                    <p>Eu e um grupo de colegas desenvolvemos um site em conjunto como parte de um trabalho escolar proposto pelo nosso professor. A apresentação será feita para os alunos do 1º ano. Escolhemos o tema basquete e utilizamos HTML e CSS para criar o site, explorando a história do esporte, seus destaques e a presença do basquete no Brasil.</p>
-                </div>
-            </section>
-
-            <!-- Seção do canal -->
-            <section class="module parallax parallax-2">
-                <h1>MEU CANAL</h1>
-            </section>
-
-            <section class="module content">
-                <div class="container">
-                    <h2>Jotasso</h2>
-                    <p>Não tenho frequência em meu canal, é mais um passatempo, quando tenho tempo, gosto de fazer uns vídeos simples com clipes de alguns jogos.</p>
-                </div>
-            </section>
-
-            <!-- Seção do Atlético-MG -->
-            <section class="module parallax parallax-3">
-                <h1>ATLÉTICO-MG</h1>
-            </section>
-
-            <section class="module content">
-                <div class="container">
-                    <h2>Galooooooooooo!!!</h2>
-                    <p>O Atlético Mineiro, também conhecido como Galo, é um dos maiores clubes de futebol do Brasil. Foi fundado em 25 de março de 1908, em Belo Horizonte, Minas Gerais. Suas cores são preto e branco, e o time manda seus jogos na Arena MRV. O Galo tem uma torcida apaixonada e já conquistou títulos importantes, como o Campeonato Brasileiro, a Copa do Brasil e a Copa Libertadores da América em 2013. Entre seus jogadores mais famosos estão Reinaldo, Ronaldinho Gaúcho e Hulk.</p>
-                </div>
-            </section>
-
-            <!-- Seção de GOT -->
-            <section class="module parallax parallax-4">
-                <h1>GAME OF THRONES</h1>
-            </section>
-
-            <section class="module content">
-                <div class="container">
-                    <h2>O que é a série Game of Thrones?</h2>
-                    <p>Game of Thrones é uma série de fantasia épica e drama que se passa em Westeros e Essos, reinos marcados por guerras, intrigas políticas e disputas pelo Trono de Ferro. Diversas famílias nobres — como os Stark, Lannister e Targaryen — lutam pelo poder, cada uma com suas ambições, segredos e estratégias. Enquanto reis e lordes travam batalhas, surgem ameaças ainda maiores, como os Caminhantes Brancos e os dragões. Ao longo da série, Game of Thrones explora temas de lealdade, traição, honra e ambição, mostrando como cada escolha pode mudar o destino de povos inteiros.</p>
-                </div>
-            </section>
-
-            <!-- Seção do QR Code -->
-            <div class="qrcode-section">
-                <h2>Acesse pelo seu smartphone:</h2>
-                <img src="qrcode.png" alt="QR Code para acesso via smartphone">
+                <p>Projetos desenvolvidos durante minha trajetória no curso técnico de Informática.</p>
+                <a class="botao" href="#projetos">Ver projetos</a>
             </div>
-        </main>
-    </div>
+        </section>
 
-    <!-- Rodapé com informações pessoais e de autorização -->
+        <section class="content" id="projetos">
+            <div class="container">
+                <h2>Meus projetos</h2>
+                <p class="intro">Aqui estão algumas atividades práticas feitas com HTML, CSS, JavaScript, PHP e banco de dados.</p>
+
+                <div class="cards">
+                    <article class="card">
+                        <span class="categoria">JavaScript</span>
+                        <h3>Jogo da Velha</h3>
+                        <p>Jogo em tabuleiro 3x3, com partidas entre jogadores ou contra o computador.</p>
+                        <a href="https://joaosr8.github.io/jogodavelha/" target="_blank" rel="noopener noreferrer">Acessar projeto</a>
+                    </article>
+
+                    <article class="card">
+                        <span class="categoria">HTML • CSS • JS</span>
+                        <h3>Jogo do Mario</h3>
+                        <p>Jogo inspirado no Mario, com obstáculos, pulos e mecânica simples de avanço.</p>
+                        <a href="https://joaosr8.github.io/jogodomario/" target="_blank" rel="noopener noreferrer">Acessar projeto</a>
+                    </article>
+
+                    <article class="card">
+                        <span class="categoria">PHP • MySQL</span>
+                        <h3>Formulário de Cadastro</h3>
+                        <p>Primeira atividade integrando formulário HTML, PHP, JavaScript e banco de dados.</p>
+                        <a href="#" aria-label="Projeto em desenvolvimento">Em desenvolvimento</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero parallax parallax-2" id="sobre">
+            <div class="hero-content">
+                <span class="tag">Quem sou eu</span>
+                <h1>João Silva</h1>
+                <p>Estudante técnico em Informática, apaixonado por tecnologia, música, jogos e programação.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container texto-duplo">
+                <div>
+                    <h2>Sobre mim</h2>
+                    <p>Nasci em 15 de maio de 2008 e sou técnico em Informática pela E.E.T.I Professor Fontes. Nasci e moro em Belo Horizonte, Minas Gerais.</p>
+                    <p>Tenho grande interesse por música, especialmente pelos artistas Drake e Ryu the Runner. Também gosto de jogos eletrônicos, principalmente multiplayer, e estou sempre aberto a aprender coisas novas.</p>
+                </div>
+                <div>
+                    <h2>Minha relação com tecnologia</h2>
+                    <p>Sou apaixonado por tecnologia desde a infância. Mesmo começando com recursos simples, como um Xbox 360, meu interesse pela área cresceu bastante.</p>
+                    <p>Conheci a programação por volta dos 11/12 anos, durante a pandemia, quando tive meu primeiro notebook. Desde então, sigo desenvolvendo meus conhecimentos na área.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero parallax parallax-3" id="galo">
+            <div class="hero-content">
+                <span class="tag">Futebol</span>
+                <h1>Atlético-MG</h1>
+                <p>Uma paixão mineira, marcada por história, torcida forte e grandes conquistas.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>Galooooooooooo!!!</h2>
+                <p>O Atlético Mineiro, também conhecido como Galo, é um dos maiores clubes de futebol do Brasil. Fundado em 25 de março de 1908, em Belo Horizonte, o clube tem uma torcida apaixonada e uma história marcada por grandes títulos.</p>
+                <p>Entre suas conquistas estão o Campeonato Brasileiro, a Copa do Brasil e a Copa Libertadores da América de 2013. Alguns nomes históricos do clube são Reinaldo, Ronaldinho Gaúcho e Hulk.</p>
+            </div>
+        </section>
+
+        <section class="hero parallax parallax-4" id="got">
+            <div class="hero-content">
+                <span class="tag">Série favorita</span>
+                <h1>Game of Thrones</h1>
+                <p>Uma história de poder, guerra, traições e disputas pelo Trono de Ferro.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>O que é Game of Thrones?</h2>
+                <p>Game of Thrones é uma série de fantasia épica e drama que se passa em Westeros e Essos. A trama acompanha famílias nobres, como Stark, Lannister e Targaryen, em disputas pelo poder e pelo Trono de Ferro.</p>
+                <p>Além das guerras políticas, a série apresenta ameaças maiores, como os Caminhantes Brancos e os dragões. A história trabalha temas como lealdade, traição, honra, ambição e consequências das escolhas.</p>
+            </div>
+        </section>
+
+
+        <section class="hero parallax parallax-5" id="filmes">
+            <div class="hero-content">
+                <span class="tag">Cinema</span>
+                <h1>Filmes</h1>
+                <p>Um espaço para falar sobre meus filmes favoritos, principalmente a saga Duna, e registrar minha jornada no Letterboxd.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container texto-duplo">
+                <div>
+                    <h2>Duna</h2>
+                    <p>Duna é uma saga de ficção científica que mistura política, guerra, religião, poder e destino. Os filmes mostram o universo de Arrakis, um planeta desértico essencial por causa da especiaria, uma substância valiosa que move impérios e conflitos.</p>
+                    <p>Gosto de Duna pela atmosfera grandiosa, pela fotografia marcante, pela trilha sonora intensa e pela forma como a história trabalha ambição, liderança e consequências das escolhas.</p>
+                </div>
+
+                <div>
+                    <h2>Meu Letterboxd</h2>
+                    <p>No Letterboxd, registro filmes que assisto, acompanho minhas avaliações e organizo melhor meu gosto por cinema.</p>
+                    <a class="botao" href="https://letterboxd.com/jotasso1/" target="_blank" rel="noopener noreferrer">Ver meu Letterboxd</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="qrcode-section" aria-label="QR Code do site">
+            <h2>Acesse pelo smartphone</h2>
+            <p>Escaneie o QR Code para abrir este site no celular.</p>
+            <img src="qrcode.png" alt="QR Code para acesso ao site pelo smartphone">
+        </section>
+    </main>
+
     <footer>
-        João Silva Ribeiro<br>
-        <a href="https://www.instagram.com/jsrz01/" style="color: #89cfff;" target="_blank">Instagram</a> &nbsp;&&nbsp; <a href="https://www.linkedin.com/in/joaosr8" style="color: #89cfff;" target="_blank">LinkedIn</a><br>
-        Cursando Técnico em Informática na E.E. Técnico Industrial Professor Fontes<br>
+        <strong>João Silva Ribeiro</strong><br>
+        <a href="https://www.instagram.com/jsrz031/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <span> • </span>
+        <a href="https://www.linkedin.com/in/joaosr8" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
+        Técnico em Informática na E.E. Técnico Industrial Professor Fontes<br>
         Este site é de minha autoria e representa minhas atividades escolares.
     </footer>
-
 </body>
 </html>
